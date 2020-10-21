@@ -1,0 +1,39 @@
+body{
+background: #1f2235 ;
+font-family: "Poppins";
+color: white;
+}
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    --animation-delay:10s;
+  }
+
+  .ani{
+    
+    animation-name: example;
+    animation-duration: 4s;
+  
+  }
+  @keyframes example {
+    from {color:gray;}
+    to {color:orange;}
+  }
+
+  .inner{
+    overflow: hidden;
+  }
+
+  .inner img{
+
+    transition: all 1.5s ease;
+  }
+
+  inner :hover img{
+
+    transform: scale(1.5);
+  }
